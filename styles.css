@@ -63,3 +63,9 @@ p{
     margin-top: auto;
     margin-bottom: 4px;
 }
+
+.sketchBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
