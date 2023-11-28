@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+    background-color: rgb(178, 177, 175);
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+p{
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: stretch;
+    gap: 16px;
+    min-height: 100%;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sizeSlider{
+    display: flex;
+    width: 512px;
+}
+
+.sketchBox{
+    display: flex;
+    height: 512px;
+    width: 512px;
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: crimson;
+    background-color: white;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 4px;
+}

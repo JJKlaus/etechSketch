@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <head>
-
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="main">
     <div class="title">
-
+        <h1>Etch-A-Sketch</h1>
     </div>
     <div class="container">
         <div class="slider">
+            <p>pixel size</p>
+
+                <input type="range" min="8" max="128"   value="16" class="sizeSlider" id="sizeSelector">
 
         </div>
         <div class="sketchBox">
@@ -15,17 +22,22 @@
         </div>
         <div class="controls">
             <div class="colorRand">
-
+                <button>Color Randomizer</button>
             </div>
             <div class="clear">
-
+                <button>Clear Canvas</button>
             </div>
             <div class="curColor">
-                
+                <p>circle with current color</p>
             </div>
         </div>
-    </div>
+    </div></div>
     <div class="footer">
-
+        <p>Copyright © 2023 Jake Klaus</p>
     </div>
+
+
+    <script src="app.js"></script>
+
 </body>
+</html>
