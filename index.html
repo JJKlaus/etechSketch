@@ -14,17 +14,17 @@
         <div class="slider">
             <p>pixel size</p>
 
-                <input type="range" min="8" max="128"   value="16" class="sizeSlider" id="sizeSelector">
+                <input type="range" min="16" max="128"   value="16" step="16" class="sizeSlider" id="sizeSelector">
 
         </div>
-        <div class="sketchBox">
+         <div class="sketchBox" id="sketchBox">
 
         </div>
         <div class="controls">
             <div class="colorRand">
                 <button>Color Randomizer</button>
             </div>
-            <div class="clear">
+            <div id="clear">
                 <button>Clear Canvas</button>
             </div>
             <div class="curColor">
@@ -37,7 +37,7 @@
     </div>
 
 
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
 
 </body>
 </html>
