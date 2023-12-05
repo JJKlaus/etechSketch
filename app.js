@@ -2,10 +2,18 @@ document.addEventListener('DOMContentLoaded', function(){
     const gridBox = document.getElementById('sketchBox');
     const gridSizeSlider = document.getElementById('sizeSelector')
     const clearBtn = document.getElementById('clear')
+    const colorRandBtn = document.getElementById('colorRand')
+    const colorDisplay = document.getElementById('curColor')
+
+    
     let isDrawing = false;
     let gridSize = gridSizeSlider.value;
+   
     gridSizeSlider.addEventListener('input', updateGrid);
     clearBtn.addEventListener('click', clearGrid);
+    colorRandBtn.addEventListener('click', randColor);
+
+    let penColor = '#000000';
 
     initGrid(gridSize);
 
@@ -40,7 +48,7 @@ function drawToggle(event){
 function draw(event){
     if(isDrawing){
         const square = event.target;
-        square.style.backgroundColor = '#000000';
+        square.style.backgroundColor = penColor;
     }
 }
 
@@ -55,6 +63,16 @@ function clearGrid(){
     }
 
     console.log('cleared')
+}
+
+function randColor(){
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for(let i=0; i<6; i++){
+        color += letters[Math.floor(Math.random()*16)];
+    }
+    penColor = color;
+    colorDisplay.style.backgroundColor = color;
 }
 
 window.onload = function(){

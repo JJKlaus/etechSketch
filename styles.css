@@ -81,3 +81,12 @@ p{
     border: .5px solid rgb(226, 225, 225);
     box-sizing: border-box;
 }
+
+.curColor{
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    background-color: black;
+    border: 1px solid red;
+}
